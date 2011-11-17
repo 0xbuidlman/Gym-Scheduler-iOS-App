@@ -21,6 +21,7 @@
 		5A2B2DF2146E987E00878D0A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2B2DF1146E987E00878D0A /* SecondViewController.m */; };
 		5A2B2DF4146E987E00878D0A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2B2DF3146E987E00878D0A /* second.png */; };
 		5A2B2DF6146E987E00878D0A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A2B2DF5146E987E00878D0A /* second@2x.png */; };
+		5A8934BB14700409006ADEA6 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8934BA14700409006ADEA6 /* ScheduleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,22 +29,24 @@
 		5A2B2DD1146E987E00878D0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5A2B2DD3146E987E00878D0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A2B2DD5146E987E00878D0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5A2B2DD9146E987E00878D0A /* blahhzers-Info.plist */ = {isa = PBXFileReference; path = "blahhzers-Info.plist"; sourceTree = "<group>"; };
+		5A2B2DD9146E987E00878D0A /* blahhzers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blahhzers-Info.plist"; sourceTree = "<group>"; };
 		5A2B2DDB146E987E00878D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A2B2DDD146E987E00878D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A2B2DDF146E987E00878D0A /* blahhzers-Prefix.pch */ = {isa = PBXFileReference; path = "blahhzers-Prefix.pch"; sourceTree = "<group>"; };
-		5A2B2DE0146E987E00878D0A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A2B2DDF146E987E00878D0A /* blahhzers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blahhzers-Prefix.pch"; sourceTree = "<group>"; };
+		5A2B2DE0146E987E00878D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A2B2DE1146E987E00878D0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A2B2DE4146E987E00878D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		5A2B2DE7146E987E00878D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		5A2B2DE9146E987E00878D0A /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		5A2B2DE9146E987E00878D0A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		5A2B2DEA146E987E00878D0A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		5A2B2DEC146E987E00878D0A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		5A2B2DEE146E987E00878D0A /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		5A2B2DF0146E987E00878D0A /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		5A2B2DF0146E987E00878D0A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5A2B2DF1146E987E00878D0A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5A2B2DF3146E987E00878D0A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		5A2B2DF5146E987E00878D0A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		5A8934B914700409006ADEA6 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		5A8934BA14700409006ADEA6 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				5A2B2DF1146E987E00878D0A /* SecondViewController.m */,
 				5A2B2DF3146E987E00878D0A /* second.png */,
 				5A2B2DF5146E987E00878D0A /* second@2x.png */,
+				5A8934B914700409006ADEA6 /* ScheduleViewController.h */,
+				5A8934BA14700409006ADEA6 /* ScheduleViewController.m */,
 				5A2B2DD8146E987E00878D0A /* Supporting Files */,
 			);
 			path = blahhzers;
@@ -190,6 +195,7 @@
 				5A2B2DE2146E987E00878D0A /* AppDelegate.m in Sources */,
 				5A2B2DEB146E987E00878D0A /* FirstViewController.m in Sources */,
 				5A2B2DF2146E987E00878D0A /* SecondViewController.m in Sources */,
+				5A8934BB14700409006ADEA6 /* ScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +317,7 @@
 				5A2B2DFB146E987E00878D0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

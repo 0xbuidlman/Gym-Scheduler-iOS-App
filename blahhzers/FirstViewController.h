@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScheduleViewController.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UITableViewController
+
+@property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, strong) NSArray *stuff;
+@property (nonatomic, strong) NSString *schedule_id;
+@property (nonatomic, strong) NSString *schedule_name;
+
 
 @end
