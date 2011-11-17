@@ -25,14 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A2B2DCD146E987E00878D0A /* blahhzers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blahhzers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A2B2DCD146E987E00878D0A /* dobby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dobby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2B2DD1146E987E00878D0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5A2B2DD3146E987E00878D0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A2B2DD5146E987E00878D0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5A2B2DD9146E987E00878D0A /* blahhzers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blahhzers-Info.plist"; sourceTree = "<group>"; };
+		5A2B2DD9146E987E00878D0A /* dobby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dobby-Info.plist"; sourceTree = "<group>"; };
 		5A2B2DDB146E987E00878D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A2B2DDD146E987E00878D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A2B2DDF146E987E00878D0A /* blahhzers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blahhzers-Prefix.pch"; sourceTree = "<group>"; };
+		5A2B2DDF146E987E00878D0A /* dobby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dobby-Prefix.pch"; sourceTree = "<group>"; };
 		5A2B2DE0146E987E00878D0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A2B2DE1146E987E00878D0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A2B2DE4146E987E00878D0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		5A2B2DCE146E987E00878D0A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A2B2DCD146E987E00878D0A /* blahhzers.app */,
+				5A2B2DCD146E987E00878D0A /* dobby.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,10 +115,10 @@
 		5A2B2DD8146E987E00878D0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A2B2DD9146E987E00878D0A /* blahhzers-Info.plist */,
+				5A2B2DD9146E987E00878D0A /* dobby-Info.plist */,
 				5A2B2DDA146E987E00878D0A /* InfoPlist.strings */,
 				5A2B2DDD146E987E00878D0A /* main.m */,
-				5A2B2DDF146E987E00878D0A /* blahhzers-Prefix.pch */,
+				5A2B2DDF146E987E00878D0A /* dobby-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A2B2DCC146E987E00878D0A /* blahhzers */ = {
+		5A2B2DCC146E987E00878D0A /* dobby */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A2B2DF9146E987E00878D0A /* Build configuration list for PBXNativeTarget "blahhzers" */;
+			buildConfigurationList = 5A2B2DF9146E987E00878D0A /* Build configuration list for PBXNativeTarget "dobby" */;
 			buildPhases = (
 				5A2B2DC9146E987E00878D0A /* Sources */,
 				5A2B2DCA146E987E00878D0A /* Frameworks */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = blahhzers;
+			name = dobby;
 			productName = blahhzers;
-			productReference = 5A2B2DCD146E987E00878D0A /* blahhzers.app */;
+			productReference = 5A2B2DCD146E987E00878D0A /* dobby.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "None.  Student.";
 			};
-			buildConfigurationList = 5A2B2DC7146E987E00878D0A /* Build configuration list for PBXProject "blahhzers" */;
+			buildConfigurationList = 5A2B2DC7146E987E00878D0A /* Build configuration list for PBXProject "dobby" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -164,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A2B2DCC146E987E00878D0A /* blahhzers */,
+				5A2B2DCC146E987E00878D0A /* dobby */,
 			);
 		};
 /* End PBXProject section */
@@ -280,9 +280,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "blahhzers/blahhzers-Prefix.pch";
-				INFOPLIST_FILE = "blahhzers/blahhzers-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "blahhzers/dobby-Prefix.pch";
+				INFOPLIST_FILE = "blahhzers/dobby-Info.plist";
+				PRODUCT_NAME = dobby;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -291,9 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "blahhzers/blahhzers-Prefix.pch";
-				INFOPLIST_FILE = "blahhzers/blahhzers-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "blahhzers/dobby-Prefix.pch";
+				INFOPLIST_FILE = "blahhzers/dobby-Info.plist";
+				PRODUCT_NAME = dobby;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -301,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A2B2DC7146E987E00878D0A /* Build configuration list for PBXProject "blahhzers" */ = {
+		5A2B2DC7146E987E00878D0A /* Build configuration list for PBXProject "dobby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A2B2DF7146E987E00878D0A /* Debug */,
@@ -310,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A2B2DF9146E987E00878D0A /* Build configuration list for PBXNativeTarget "blahhzers" */ = {
+		5A2B2DF9146E987E00878D0A /* Build configuration list for PBXNativeTarget "dobby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A2B2DFA146E987E00878D0A /* Debug */,
