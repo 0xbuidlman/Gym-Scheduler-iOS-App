@@ -16,8 +16,14 @@
 @property (nonatomic, strong) NSString *schedule_id;
 @property (nonatomic, strong) NSString *day;
 @property (nonatomic, strong) NSString *weekday;
+@property (nonatomic, strong) NSDate *nextDay;
+@property (nonatomic, strong) NSDate *previousDay;
+@property (nonatomic, strong) NSDate *initialDay;
 
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *previousDay;
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *nextDay;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *previousDayItem;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextDayItem;
+
+-(IBAction)nextDay:(id)sender;
+-(IBAction)previousDay:(id)sender;
 
 @end

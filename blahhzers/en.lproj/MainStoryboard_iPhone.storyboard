@@ -102,15 +102,23 @@
                         </connections>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem title="Previous Day" id="xWX-8x-0Uq"/>
+                        <barButtonItem title="Previous Day" id="xWX-8x-0Uq">
+                            <connections>
+                                <action selector="previousDay:" destination="rg1-VL-hjr" id="ogH-DQ-a9u"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="QDb-5y-Qr6"/>
-                        <barButtonItem title="Next Day" id="PWB-L6-Vxp"/>
+                        <barButtonItem title="Next Day" id="PWB-L6-Vxp">
+                            <connections>
+                                <action selector="nextDay:" destination="rg1-VL-hjr" id="ofO-e0-zAo"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="taz-Zr-1j8"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="nextDay" destination="PWB-L6-Vxp" id="KxN-Py-ETL"/>
-                        <outlet property="previousDay" destination="xWX-8x-0Uq" id="YJ0-p2-Go9"/>
+                        <outlet property="nextDayItem" destination="PWB-L6-Vxp" id="BY6-Dx-KD6"/>
+                        <outlet property="previousDayItem" destination="xWX-8x-0Uq" id="UHV-Ad-rYq"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -160,8 +168,10 @@
         <class className="ScheduleViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="nextDay" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="previousDay" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="nextDay:"/>
+                <relationship kind="action" name="previousDay:"/>
+                <relationship kind="outlet" name="nextDayItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="previousDayItem" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
     </classes>

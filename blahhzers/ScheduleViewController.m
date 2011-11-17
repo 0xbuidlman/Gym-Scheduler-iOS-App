@@ -10,7 +10,7 @@
 
 
 @implementation ScheduleViewController
-@synthesize data, stuff, days, currentClasses, schedule_id, weekday, day, previousDay, nextDay;
+@synthesize data, stuff, days, currentClasses, schedule_id, weekday, day, previousDay, nextDay, nextDayItem, previousDayItem, initialDay;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,7 +32,7 @@
 - (void) myData {
 	if (!data) {
         // Log this event
-        NSLog(@"Fetching schedule JSON data");
+        NSLog(@"Fetching schedule JSON dataasdfasdf");
         
         // Prepare URL request to download statuses from Twitter
         NSString *scheduleUrl = [NSString stringWithFormat:@"http://dobby-rails-app.dev/schedules/%@/workouts.json", self.schedule_id];
@@ -68,27 +68,41 @@
     [dateFormatter setDateFormat:@"MM/dd"];
     NSString *thisDay = [dateFormatter stringFromDate:nextDate];
     
+    if (offSet == 1)
+        self.nextDay = nextDate;
+    else if (offSet == -1)
+        self.previousDay = nextDate;
+    
+    NSLog(@"dealy: %@", [NSString stringWithFormat:@"%@ %@", thisWeekday, thisDay]);
+    
     return [NSString stringWithFormat:@"%@ %@", thisWeekday, thisDay];
 }
 #pragma mark - View lifecycle
+- (void) loadData {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
+    
+    if (!self.initialDay) {
+        self.initialDay = [NSDate date];
+    }
 
+    [dateFormatter setDateFormat:@"EEEE"];
+    self.weekday = [dateFormatter stringFromDate:self.initialDay];
+    
+    [dateFormatter setDateFormat:@"MM/dd"];
+    self.day = [dateFormatter stringFromDate:self.initialDay];
+    self.nextDayItem.title = [self formattedDate:self.initialDay offsetby:1];
+    NSLog(@"blahzdf: %@", self.nextDayItem.title);
+    self.previousDayItem.title = [self formattedDate:self.initialDay offsetby:-1];
+    
+    NSArray *classes = [self.stuff objectForKey:weekday];
+    
+    self.currentClasses = classes;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self myData];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];  
-    [dateFormatter setDateFormat:@"EEEE"];
-    self.weekday = [dateFormatter stringFromDate:[NSDate date]];
-    [dateFormatter setDateFormat:@"MM/dd"];
-    self.day = [dateFormatter stringFromDate:[NSDate date]];
-    
-    self.nextDay.title = [self formattedDate:[NSDate date] offsetby:1];
-    self.previousDay.title = [self formattedDate:[NSDate date] offsetby:-1];
-    
-    NSArray *classes = [self.stuff objectForKey:weekday];
-
-    self.currentClasses = classes;
+    [self loadData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -177,6 +191,18 @@ titleForHeaderInSection:(NSInteger)section {
     
     // Configure the cell.
     return cell;
+}
+
+-(IBAction)nextDay:(id)sender {
+    self.initialDay = self.nextDay;
+    [self loadData];
+    [self.tableView reloadData];
+}
+
+-(IBAction)previousDay:(id)sender {
+    self.initialDay = self.previousDay;
+    [self loadData];
+    [self.tableView reloadData];
 }
 
 /*
