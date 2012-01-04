@@ -10,7 +10,11 @@
 
 @implementation FirstViewController
 
+<<<<<<< HEAD
 @synthesize data, stuff, schedule_id, schedule_name, location_id;
+=======
+@synthesize data, stuff, schedule_id, schedule_name;
+>>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 
 - (void)didReceiveMemoryWarning
 {
@@ -24,8 +28,12 @@
         NSLog(@"Fetching JSON data");
                 
         // Prepare URL request to download statuses from Twitter
+<<<<<<< HEAD
         NSString *url = [NSString stringWithFormat:@"http://dobby-rails-app.dev//locations/%@/schedules.json", self.location_id];
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+=======
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dobby-rails-app.dev/accounts/1/schedules.json"]];
+>>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
         
         // Perform request and get JSON back as a NSData object
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
@@ -75,6 +83,11 @@
                              dequeueReusableCellWithIdentifier:@"GymCell"];
     cell.textLabel.text = [[self.stuff objectAtIndex:row] objectForKey:@"name"];
 
+<<<<<<< HEAD
+=======
+    self.schedule_id = [[self.stuff objectAtIndex:row] objectForKey:@"id"];
+    self.schedule_name = [[self.stuff objectAtIndex:row] objectForKey:@"name"];
+>>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
     // Configure the cell.
     return cell;
 }
@@ -84,6 +97,7 @@ titleForHeaderInSection:(NSInteger)section {
 	return nil;
 }
 
+<<<<<<< HEAD
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger row = [indexPath row];
@@ -97,6 +111,10 @@ titleForHeaderInSection:(NSInteger)section {
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"Sender: %@", sender);
+=======
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+>>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 	if ([segue.identifier isEqualToString:@"ShowClasses"])
 	{
 		ScheduleViewController *scheduleController = segue.destinationViewController;
