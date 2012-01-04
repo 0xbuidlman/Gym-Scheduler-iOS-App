@@ -10,11 +10,8 @@
 
 
 @implementation ScheduleViewController
-<<<<<<< HEAD
 @synthesize data, stuff, days, currentClasses, schedule_id, workout_id, weekday, day, previousDay, nextDay, nextDayItem, previousDayItem, initialDay, daysOfWeek;
-=======
-@synthesize data, stuff, days, currentClasses, schedule_id, weekday, day, previousDay, nextDay, nextDayItem, previousDayItem, initialDay;
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -46,20 +43,12 @@
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         
         NSError* error;
-<<<<<<< HEAD
         NSArray * jsonArr = [NSJSONSerialization 
-=======
-        NSDictionary * jsonArr = [NSJSONSerialization 
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
                              JSONObjectWithData:response //1                              
                              options:kNilOptions
                              error:&error];
         
         self.stuff = jsonArr;
-<<<<<<< HEAD
-=======
-        NSLog(@"sched jsonArr: %@", jsonArr);        
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 	}
 }
 
@@ -83,13 +72,7 @@
         self.nextDay = nextDate;
     else if (offSet == -1)
         self.previousDay = nextDate;
-<<<<<<< HEAD
-        
-=======
-    
-    NSLog(@"dealy: %@", [NSString stringWithFormat:@"%@ %@", thisWeekday, thisDay]);
-    
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
+
     return [NSString stringWithFormat:@"%@ %@", thisWeekday, thisDay];
 }
 #pragma mark - View lifecycle
@@ -99,19 +82,15 @@
     if (!self.initialDay) {
         self.initialDay = [NSDate date];
     }
-<<<<<<< HEAD
     
     self.daysOfWeek = [[NSArray alloc] initWithObjects:@"Sunday", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday", nil];
-=======
 
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
     [dateFormatter setDateFormat:@"EEEE"];
     self.weekday = [dateFormatter stringFromDate:self.initialDay];
     
     [dateFormatter setDateFormat:@"MM/dd"];
     self.day = [dateFormatter stringFromDate:self.initialDay];
     self.nextDayItem.title = [self formattedDate:self.initialDay offsetby:1];
-<<<<<<< HEAD
     self.previousDayItem.title = [self formattedDate:self.initialDay offsetby:-1];
     
     NSMutableArray *classes = [[NSMutableArray alloc] init];
@@ -127,15 +106,6 @@
     self.currentClasses = classes;
 }
 
-=======
-    NSLog(@"blahzdf: %@", self.nextDayItem.title);
-    self.previousDayItem.title = [self formattedDate:self.initialDay offsetby:-1];
-    
-    NSArray *classes = [self.stuff objectForKey:weekday];
-    
-    self.currentClasses = classes;
-}
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -203,22 +173,16 @@ titleForHeaderInSection:(NSInteger)section {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-<<<<<<< HEAD
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; 
 
     NSUInteger row = [indexPath row];
 
-=======
-    NSUInteger row = [indexPath row];
-        
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
     UITableViewCell *cell = [tableView 
                              dequeueReusableCellWithIdentifier:@"ScheduleCell"];
     
     NSLog(@"current classes: %@", self.currentClasses);
     
     NSDictionary *workout = [self.currentClasses objectAtIndex:row];
-<<<<<<< HEAD
     self.workout_id = [workout objectForKey:@"id"];
 
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
@@ -251,29 +215,10 @@ titleForHeaderInSection:(NSInteger)section {
     NSString *instructor = [workout objectForKey:@"instructor"];
     instructorLabel.text = [NSString stringWithFormat:@"Instructor: %@", instructor];
         
-=======
-        
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
-    NSString *start_time = [[workout objectForKey:@"start_time"] substringToIndex:[[workout objectForKey:@"start_time"] length] - 1];
-    NSDate *date = [dateFormatter dateFromString:start_time];
-    
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components = [calendar components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:date];
-    NSInteger hour = [components hour];
-    NSInteger minute = [components minute];
-
-    NSLog(@"date: %d, %d", hour, minute);
-    cell.textLabel.text = [workout objectForKey: @"name"];
-    UILabel *hoursLabel = (UILabel *)[cell viewWithTag:101];
-    hoursLabel.text = [workout objectForKey: @"friendly_time"];
-    
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
     // Configure the cell.
     return cell;
 }
 
-<<<<<<< HEAD
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger row = [indexPath row];
@@ -294,8 +239,6 @@ titleForHeaderInSection:(NSInteger)section {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-=======
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 -(IBAction)nextDay:(id)sender {
     self.initialDay = self.nextDay;
     [self loadData];
@@ -346,21 +289,5 @@ titleForHeaderInSection:(NSInteger)section {
     return YES;
 }
 */
-
-<<<<<<< HEAD
-=======
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
->>>>>>> bfe6fd512b0e839a62d97f6e03c1d6164959b704
 
 @end
