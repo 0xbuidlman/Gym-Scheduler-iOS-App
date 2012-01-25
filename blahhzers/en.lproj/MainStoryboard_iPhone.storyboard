@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zGg-r8-JKO">
-
     <dependencies>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
@@ -20,7 +19,6 @@
             </objects>
             <point key="canvasLocation" x="723" y="696"/>
         </scene>
-
         <scene sceneID="MmP-x0-uCe">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMc-X7-S9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -31,7 +29,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GymCell" textLabel="GKY-H5-h2r" style="IBUITableViewCellStyleDefault" id="hjy-lb-dU3">
-
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -48,7 +45,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -67,14 +63,12 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1234" y="0.0"/>
-
         </scene>
         <scene sceneID="Ykv-vl-W2o">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kW-aC-V99" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="rg1-VL-hjr" customClass="ScheduleViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="bzO-S2-4Tp">
-
                         <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,29 +83,27 @@
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="uLk-hr-rzn">
                                             <rect key="frame" x="80" y="1" width="240" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Instructor" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="nqS-8h-GEP">
-                                            <rect key="frame" x="80" y="20" width="240" height="14"/>
+                                            <rect key="frame" x="80" y="20" width="240" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="vg6-1X-C9k">
-                                            <rect key="frame" x="0.0" y="1" width="72" height="47"/>
+                                            <rect key="frame" x="0.0" y="1" width="80" height="47"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
-
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -265,7 +257,6 @@
         <image name="Nimbus20Logo.png" width="64" height="64"/>
         <image name="calendar.png" width="256" height="256"/>
     </resources>
-
     <classes>
         <class className="FirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
@@ -284,7 +275,6 @@
                 <relationship kind="outlet" name="title" candidateClass="UILabel"/>
             </relationships>
         </class>
-
         <class className="ScheduleViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleViewController.h"/>
             <relationships>

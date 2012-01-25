@@ -24,7 +24,7 @@
         NSLog(@"Fetching JSON data");
                 
         // Prepare URL request to download statuses from Twitter
-        NSString *url = [NSString stringWithFormat:@"http://dobby-rails-app.dev//locations/%@/schedules.json", self.location_id];
+        NSString *url = [NSString stringWithFormat:@"http://dobby-rails-app.dev/locations/%@/schedules.json", self.location_id];
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
         
         // Perform request and get JSON back as a NSData object
@@ -91,13 +91,10 @@ titleForHeaderInSection:(NSInteger)section {
     self.schedule_name = [[self.stuff objectAtIndex:row] objectForKey:@"name"];
     [self performSegueWithIdentifier:@"ShowClasses" sender:(id)self];
     NSLog(@"Location id: %@", self.location_id);
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"Sender: %@", sender);
-
 	if ([segue.identifier isEqualToString:@"ShowClasses"])
 	{
 		ScheduleViewController *scheduleController = segue.destinationViewController;
